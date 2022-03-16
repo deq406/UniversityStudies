@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Котики</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="task1.js"></script>
+    <script type="text/javascript" src="task3.js"></script>
+    <script type="text/javascript" src="task4.js"></script>
+    
+  </head>
+  <body class="bodystyle">
+    <h1 class="h1_1">Котики</h1>
+    <input type="button" value="Задание 3" onclick="Z3()">
+    <input type="button" value="Задание 4" onclick="Z4()">
+        <p class="p1_1">
+        <h2 class="h2">История про кошку</h2>
+      У меня дома живет кошка. Она очень красивого окраса, ласковая и игривая.
+      Она моя лучшая подруга, <span>сидит со мной</span>, когда я делаю уроки, встречает со
+      школы и провожает, когда я ухожу из дому. А появилась она у нас случайно и
+      неожиданно.
+    </p>
+    <h3 class="h3">Продолжение</h3>
+    <p class="p1_2">
+        У нас нет гаража, а потому машины родители оставляют прямо возле подъезда. 
+        Соседи делают точно так, а потому, <span id="id">если приехать немного позже</span>, места во дворе можно не найти. 
+        Так было и в тот летний день. Мама оставила машину напротив больших мусорных контейнеров, и мы отправились домой.
+</p>
+<h3 class="h3">Конец</h3>
+<p class ="p1_3">
+    Но сейчас она подросла, чувствует себя полноправной хозяйкой в доме. 
+    У кошки нет имени – <span id="span" name="span1" class="span">мы не смогли придумать</span>, но зовем ее Кошка, а она отзывается. 
+    Мы очень рады, что судьба подарила нам домашнее животное. 
+    Без этого случая родители были против домашних животных. 
+    А раз котеночком она выбрала нашу семью, значит это подарок свыше.
+
+
+</p>
+<h2 class="h2">Списки про котов</h2>
+<ul>Список котов
+    <li type="disc">Рыжий</li>
+    <li type="disc">Черный</li>    
+</ul>
+<ul> Список котят
+    <a href="SecondPage.html"><li type="square">Белый</li></a>
+    <li type="square">Пятнистый</li>
+    <li type="square">С большими усами</li>
+</ul>
+<ul>Список кошек
+    <li type="circle">Бело-черная</li>
+    <li type="circle">Зеленая</li>
+</ul>
+<h2 class="h2">Таблица</h2>
+<table border='1'>
+  <thead>
+    <tr>
+      <th>ФИО</th>
+      <th colspan="3">Мартинович Егор Васильевич</th>
+    </tr>
+    <tr>
+      <td>Фото</td>
+      <td colspan="3">Адрес</td>
+    </tr>
+  </thead>
+ <tbody>
+   <tr>
+     <td rowspan="7">1 семестр 2021/2022 учебного года</td>
+   </tr>
+   <tr>
+     <td>Дата</td>
+      <td>Предмет</td>
+      <td>Оценка</td>
+   </tr>
+   <tr>
+     <td>31.12.2021</td>
+     <td>ОАиП</td>
+     <td class="mark">2</td>
+   </tr>
+   <tr>
+     <td>5.01.2022</td>
+     <td>Физика</td>
+     <td class="mark">9</td>
+   </tr>
+   <tr>
+     <td>11.01.2022</td>
+     <td>ОИТ</td>
+     <td class="mark">5</td>
+   </tr>
+   <tr>
+     <td>16.01.2022</td>
+     <td>Математика</td>
+     <td class="mark">6</td>
+   </tr>
+   <tr>
+     <td>22.01.2022</td>
+     <td>АЛОЦВМ</td>
+     <td class="mark">8</td>
+   </tr>
+
+ </tbody>
+</table> 
+<script type="text/javascript">
+console.log(document.all);
+
+    let child = document.body.childNodes
+    console.log(child);
+/*var span=document.getElementById("span");
+console.log(span);
+var span1=document.all.item(14);
+console.log(span1);
+
+var avgmark=document.querySelectorAll('tr>td:last-child');
+var tempAvg=0;
+for(let j=0;j<avgmark.child.length;j++){
+let childAvgStr=avgmark.childNodes[j].textContent;
+let childAvgNum=Number(childAvgStr);
+tempAvg+=(childAvgNum/avgmark.childNodes.length);
+}
+console.log(tempAvg);*/
+   
+
+
+
+ /*(function(){
+
+    var els = document.getElementsByTagName('*'),
+
+        all = [];
+
+    for(var i = 0; els[ i ]; i++ ) {
+
+        if ( els[ i ].previousSibling && els[ i ].previousSibling.nodeType !== 1 ) {
+
+            all.push( els[ i ].previousSibling );
+
+        }
+
+        all.push( els[i] );
+
+        if ( els[ i ].firstChild && els[ i ].firstChild.nodeType !== 1 && els[ i ].childNodes.length === 1 ) {
+
+        all.push( els[ i ].firstChild );
+
+        }
+
+    }
+
+  all.forEach(function(name,i){
+    document.write(i+":"+name);
+  })
+
+}());*/
+</script>
+  </body>
+</html>

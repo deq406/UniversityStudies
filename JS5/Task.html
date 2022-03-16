@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Третье задание</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <fieldset>
+      <legend><h1 class="h1">Оформить заказ</h1></legend>
+      <table>
+        <tr>
+          <td colspan="2">Имя</td>
+          <td colspan="2">
+            <div><input type="text" class="textfields" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Телефон</td>
+          <td colspan="2">
+            <div><input type="text" class="textfields" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Адрес</td>
+          <td colspan="2">
+            <textarea rows="5" cols="33" class="textfields"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Способ оплаты</td>
+          <td colspan="2">
+            <input type="radio" id="money" class="textfields" checked />
+            <label for="money">Наличными</label><br />
+            <input type="radio" id="money_1" class="textfields" />
+            <label for="money_1">Пластиковой картой</label><br />
+            <input type="radio" id="money_2" class="textfields" />
+            <label for="money_2">Безналичный расчет</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Желаемый день доставки</td>
+          <td colspan="2">
+            <input type="date" class="textfields" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Дополнительно</td>
+          <td colspan="2">
+            <input type="checkbox" id="more" class="textfields" />
+            <label for="more">Перед доставкой свяжись со мной</label><br />
+            <input type="checkbox" id="more_1" class="textfields" />
+            <label for="more">Курьер должен быть трезвым</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td colspan="2">
+            <center><input type="button" value="Отправить" /></center>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>

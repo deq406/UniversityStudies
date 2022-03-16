@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div onmouseover="onMouseOverFunction(this)" style="width: fit-content">
+      Изменение цвета
+    </div>
+    <div onclick="onClickFunction(this)">Изменение размера</div>
+    <div><img src="cat.jpeg" id="image" onclick="imageChange()" /></div>
+    <div id="text" onclick="textChange()">Текст на картинку</div>
+    <div>
+      <img
+        src="cat.jpeg"
+        onmouseover="Mouseon(this)"
+        onmouseout="Mouseoff(this)"
+        width="200px"
+      />
+    </div>
+    <div>
+      <p ondblclick="newBorder(this)" style="width: fit-content">
+        Абзац с рамкой
+      </p>
+    </div>
+    <script type="text/javascript" src="Tasks.js"></script>
+  </body>
+</html>

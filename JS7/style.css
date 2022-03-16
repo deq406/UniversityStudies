@@ -1,0 +1,21 @@
+form {
+  margin: 100px auto;
+  width: 40%;
+  font: 700 0.9em Arial, serif;
+}
+.fio {
+  margin-top: 5px;
+}
+.label {
+  display: inline-block;
+  margin-top: 5px;
+}
+textarea {
+  font: inherit;
+}
+.sub {
+  margin-top: 10px;
+}
+.button {
+  margin-top: 15px;
+}

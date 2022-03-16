@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zad2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css.css" />
+  </head>
+  <body>
+    <a href="D:\Доки\Уник\OIT\Лабы ОИТ\JavaScript\9 laba\js Laba 9.html">
+      <input type="button" value="Go to back"
+    /></a>
+    <img src="four.jpg" id="imgMove" />
+  </body>
+  <script type="text/javascript">
+    let gg = document.getElementById("imgMove");
+    let x = 1;
+    function move() {
+      gg.style.marginLeft = x + "px";
+      x++;
+      if (gg.style.marginLeft == "400px") x = 0;
+    }
+    setInterval("move()", 10);
+  </script>
+</html>

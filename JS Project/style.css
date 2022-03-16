@@ -1,0 +1,7 @@
+figure {
+  display: inline-block;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 8fr);
+}

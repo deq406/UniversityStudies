@@ -1,0 +1,84 @@
+.h1_1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+}
+.head {
+  font-style: italic;
+  font-size: small;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.bodystyle {
+  background-color: #e7d2ad;
+  margin: 0 15%;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: normal;
+}
+.h2 {
+  text-align: center;
+  color: #d1633c;
+  font-size: 1em;
+}
+.p1_2 {
+  font-style: italic;
+  font-size: medium;
+  color: royalblue;
+  font-weight: 700;
+}
+.h3 {
+  text-align: center;
+  color: #d1633c;
+  font-size: 0.95em;
+}
+.p1_3 {
+  font-family: fantasy;
+  font-stretch: semi-expanded;
+  font-style: oblique 5;
+  color: steelblue;
+}
+.span {
+  color: rgb(50, 25, 10);
+}
+.table_2 {
+  width: 715;
+  border: 1;
+}
+.cells {
+  height: 50px;
+  width: 35px;
+}
+.h1 {
+  font-style: normal;
+  font-weight: 700;
+}
+.textfields {
+  margin: 10px;
+}
+.textfield_1 {
+  margin-left: 50px;
+}
+.footer {
+  margin-top: 25%;
+  border-top: 1px solid #57b1dc;
+}
+.aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+.button {
+  background-color: aliceblue;
+  font-size: 15pt;
+  font-family: sans-serif;
+  font-weight: normal;
+  align-self: center;
+}

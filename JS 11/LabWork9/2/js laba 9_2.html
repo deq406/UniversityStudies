@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Zad2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="scs.css" />
+  </head>
+  <body>
+    <img src="cat.jpg" id="imgMove" />
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function animation() {
+        $("#imgMove").animate({ marginLeft: "400px" }, 5000, function () {
+          $("#imgMove").animate({ marginLeft: "-=400px" }, 5000, function () {
+            animation();
+          });
+        });
+      }
+      animation();
+    });
+    /*let gg = document.getElementById("imgMove");
+
+    let x = 1;
+    function move() {
+      gg.style.marginLeft = x + "px";
+      x++;
+      if (gg.style.marginLeft == "400px") x = 0;
+    }
+    setInterval("move()", 10);
+    */
+  </script>
+</html>

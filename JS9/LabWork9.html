@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body id="mybody">
+    <img
+      src="https://js.cx/clipart/ball.svg"
+      style="
+        cursor: pointer;
+        position: absolute;
+        left: 25px;
+        top: 89px;
+        z-index: 1000;
+      "
+      width="40"
+      height="40"
+      id="ball"
+    />
+    <script>
+      var ball = document.getElementById("ball");
+
+      ball.onmousedown = function (e) {
+        var coords = getCoords(ball);
+        var shiftX = e.pageX - coords.left;
+        var shiftY = e.pageY - coords.top;
+
+        ball.style.position = "absolute";
+        document.body.appendChild(ball);
+        moveAt(e);
+
+        ball.style.zIndex = 1000; // над другими элементами
+
+        function moveAt(e) {
+          ball.style.left = e.pageX - shiftX + "px";
+          ball.style.top = e.pageY - shiftY + "px";
+        }
+
+        document.onmousemove = function (e) {
+          moveAt(e);
+        };
+
+        ball.onmouseup = function () {
+          document.onmousemove = null;
+          ball.onmouseup = null;
+        };
+      };
+
+      ball.ondragstart = function () {
+        return false;
+      };
+
+      function getCoords(elem) {
+        // кроме IE8-
+        var box = elem.getBoundingClientRect();
+        return {
+          top: box.top + pageYOffset,
+          left: box.left + pageXOffset,
+        };
+      }
+    </script>
+  </body>
+</html>

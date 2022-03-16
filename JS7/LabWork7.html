@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лабораторная 7</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form name="form1">
+      <fieldset>
+        <textarea rows="3" cols="15">
+Факультет информационных технологий</textarea
+        ><br />
+        <input type="text" value="Фамилия" class="fio" id="surname" /><br />
+        <input type="text" value="Имя" class="fio" /><br />
+        <label for="options" class="label">Специальность:</label>
+        <select id="options">
+          <option value="ПОИТ">ПОИТ</option>
+          <option value="ИСИТ">ИСИТ</option>
+          <option value="ПОИБМС">ПОИБМС</option>
+          <option value="ДЭВИ">ДЭВИ</option></select
+        ><br />
+        <p>Курс:</p>
+
+        <input type="radio" name="radiobutton" value="1" />1
+        <input type="radio" name="radiobutton" value="2" />2
+        <input type="radio" name="radiobutton" value="3" />3
+        <input type="radio" name="radiobutton" value="4" />4
+        <p>Предметы:</p>
+        <input type="checkbox" name="spec" value="ОИТ" />ОИТ
+        <input type="checkbox" name="spec" value="ОАП" />ОАП
+        <input type="checkbox" name="spec" value="История" />История
+        <input type="checkbox" name="spec" value="Физика" />Физика
+        <input type="checkbox" name="spec" value="Математика" />Математика<br />
+        <input type="submit" value="submit" class="sub" />
+        <input type="reset" value="reset" class="sub" /><br />
+        <input
+          type="button"
+          value="Напечатать"
+          class="button"
+          onclick="print()"
+        />
+      </fieldset>
+    </form>
+    <script type="text/javascript" src="print.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Zad3</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  <a href = "D:\Доки\Уник\OIT\Лабы ОИТ\JavaScript\9 laba\js Laba 9.html"> <input type='button' value="Go to back"></a>
+
+  <div id="field">
+    <img src="four.jpg" width="20%"  id="ball">
+  </div>
+
+  <script>
+   let plane = document.getElementById("ball");
+    console.log(plane);
+    plane.style.position = "absolute";
+    plane.style.height = "200px";
+    let x = 0;
+    let y;
+    let times = setInterval(move, 10);
+
+    function move() {
+        x++;
+        y = 80 * Math.sin(x * 0.03);
+        plane.style.top = y + "px";
+        plane.style.left = x + "px";
+        console.log(x);
+        if (x > 900) {
+            clearInterval(times);
+        }
+    }
+  </script>
+</body>
+
+</html>

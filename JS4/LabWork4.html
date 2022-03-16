@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лабораторная работа 4</title>
+    <script type="text/javascript" src="Group.js"></script>
+    <script type="text/javascript" src="Student.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let array = new Array();
+      array[0] = 6 * Math.pow(Math.PI, 2) + 3 * Math.exp(8);
+      array[1] = 2 * Math.cos(4) + Math.cos(12) + 8 * Math.exp(3);
+      array[2] = 3 * Math.sin(9) + Math.log(5) + Math.sqrt(3);
+      array[3] = 2 * Math.tan(5) + 6 * Math.PI + Math.sqrt(12);
+      let methods = [
+        "pop",
+        "push",
+        "pow",
+        "shift",
+        "round",
+        "floor",
+        "sline",
+        "sort",
+      ];
+
+      var gr1 = new Group(7, "ПОИБМС", 31);
+      var gr2 = new Group(10, "ДЭВИ", 22);
+      var gr3 = new Group(8, "ПОИБМС", 21);
+      var gr4 = new Group(6, "ИСИТ ", 31);
+      var student1 = new Student("Егор", "Мартинович", 7, 8, 7);
+      var student2 = new Student("Василий", "Пупкин", 9, 8, 9);
+      var student3 = new Student("Дмитрий", "Волков", 5, 9, 10);
+
+      gr1.add_stud(3);
+      gr2.add_stud(5);
+      gr3.add_stud(4);
+      gr4.add_stud(7);
+      gr1.sub_stud(30);
+      gr2.sub_stud(22);
+      gr3.sub_stud(12);
+      gr4.sub_stud(9);
+      document.write(
+        "В группе\n" +
+          gr1.groupNumber +
+          "\nна данный момент\n" +
+          gr1.kolich +
+          "\nстудентов" +
+          "<br/>"
+      );
+      document.write(
+        "В группе\n" +
+          gr2.groupNumber +
+          "\nна данный момент\n" +
+          gr2.kolich +
+          "\nстудентов" +
+          "<br/>"
+      );
+      document.write(
+        "В группе\n" +
+          gr3.groupNumber +
+          "\nна данный момент\n" +
+          gr3.kolich +
+          "\nстудентов" +
+          "<br/>"
+      );
+      document.write(
+        "В группе\n" +
+          gr4.groupNumber +
+          "\nна данный момент\n" +
+          gr4.kolich +
+          "\nстудентов" +
+          "<br/>"
+      );
+      document.write(student1.fio() + "\nСредний балл:" + student1.avgmark());
+      document.write(student2.fio() + "\nСредний балл:" + student2.avgmark());
+      document.write(student3.fio() + "\nСредний балл:" + student3.avgmark());
+      Group.prototype.attedance = this.attedance;
+      gr1.attedance = 1;
+      student1.__proto__ = Group.prototype;
+      //выводим первоначальный массив
+      array.map(function (value, counter) {
+        document.write(counter + 1 + ":" + value + "<br/>");
+      });
+      /* array.forEach(function (item, i) {
+        document.write(i + 1 + ":" + item + "<br/>");
+      });*/
+      delete array[3];
+      document.write("После удаления <br/>");
+      array.map(function (value, i) {
+        document.write(i + 1 + ":" + value + "<br/>");
+      });
+      document.write(2 in array);
+      document.write("<br/>");
+      document.write("attedance" in gr1);
+      document.write("<br/>");
+      document.write("kurs" in gr2);
+      document.write("<br/>");
+      document.write(array instanceof Array);
+      document.write("<br/>");
+      document.write(gr1 instanceof Object);
+      document.write("<br/>");
+      document.write(typeof gr1.attedance);
+      document.write("<br/>");
+      document.write(typeof gr2.attedance);
+
+      /*<input
+        type="button"
+        value="Добавить студента(ов)"
+        onclick="Group.add_stud()"
+      />*/
+    </script>
+  </body>
+</html>

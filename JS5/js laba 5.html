@@ -1,0 +1,166 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+<head>
+ <meta charset="utf-8">
+<title>LabaJS5</title>    
+    <script type="text/javascript">
+    function Z1(){
+        for(var i=0; i<(document.all.length);i++)
+         {
+          alert("Tag " + document.all[i].tagName  + " number " + i);
+         }
+    }
+    function Z2(){
+        for(var i=0; i<document.body.childNodes.length; i++) 
+        {
+          var child = document.body.childNodes[i];
+          alert("Tag: " + child.tagName  + " number " + i);
+        }
+    }    
+    function Z3(){
+          var elements = document.all; 
+  for( var i=0; i < elements.length; i++) 
+    if((elements[i]) == ("[object HTMLSpanElement]")) 
+    { 
+    alert('all '+ elements[i].innerHTML ); 
+    break; 
+  } 
+  var sp=document.getElementsByTagName('span'); 
+  alert('span '+sp[0].innerHTML ); 
+  var el=document.getElementsById('id'); 
+  alert('id '+el[0].innerHTML);
+    }
+    function Z4(){
+          var srball=0; 
+  var x=document.getElementsByClassName("b"); 
+  for (var i = 0; i < x.length; i++) { 
+    srball += parseInt(x[i].innerHTML); } 
+    alert("Средний балл = " + srball / 5); 
+    var span=document.getElementsByTagName('span'); 
+    span[1].innerHTML = `${span[1].innerHTML} средний балл= ${srball/5}`;
+    alert(span[1].innerHTML);
+    }
+  </script>
+</head>
+<body>
+<input type='button' value='Zadanie 1' onclick='Z1()'>
+<input type='button' value='Zadanie 2' onclick='Z2()'>
+<input type='button' value='Zadanie 3' onclick='Z3()'>
+<input type='button' value='Zadanie 4' onclick='Z4()'>
+      <style>
+   .colortext {color: #800000;}
+  </style>
+<h1>
+    Я,<a href="SECOND 3.html">Трошко Валерия Николаевна</a>, изучаю <span class="colortext"> HTML </span> и CSS
+</h1>
+<div class="">
+<h2>4 типа темперамента</h2>
+<h3>Сангвиник</h3>
+<p class="firstParagraph">
+    <font size="5" color=#FF1493 face="Comic Sans MC">
+        Сангвиник - живой, горячий, подвижный человек, с частой сменой настроения, впечатлений, с быстрой реакцией на все события, происходящие вокруг него, довольно <span class="colortext">легко примиряющийся со своими неудачами и неприятностями</span>. Обычно сангвиники обладают выразительной мимикой. Он очень продуктивен в работе, когда ему интересно, приходя в сильное возбуждение от этого, если работа не интересна, он относится к ней безразлично, ему становится скучно.
+    </font>
+</p>
+<h3>Меланхолик</h3>
+<p class="secondParagraph">
+    <font size="4" color="red" face="Arial">
+        Меланхолик - человек легко ранимый, склонный к постоянному переживанию различных событий, он <span class="colortext">мало реагирует на внешние факторы</span>. Свои астенические переживания он не может сдерживать усилием воли, он чересчур впечатлителен, легко эмоционально раним.
+</font>
+</p>
+<h3>Холерик</h3>
+    <font size="5" color=#00008B face="Times New Roman">
+    Холерик - быстрый, страстный, порывистый, однако <span class="colortext">совершенно неуравновешенный</span>, с резко меняющимся настроением с эмоциональными вспышками, быстро истощаемый. У него нет равновесия нервных процессов, это его резко отличает от сангвиника. Холерик, увлекаясь, безалаберно растрачивает свои силы и быстро истощается.
+</font>
+</p>
+<h3>Флегматик</h3>
+    <font size="6" color=#800080 face="Monotype corsiva">
+    Флегматик неспешен, невозмутим, имеет устойчивые стремления и настроение, <span class="colortext">внешне скуп на проявление эмоций и чувств</span>. Он проявляет упорство и настойчивость в работе, оставаясь спокойным и уравновешенным. В работе он производителен, компенсируя свою неспешность прилежанием.
+</font>
+</p>
+</div>
+
+<div>
+        <h2>Содержание</h2>
+
+        <ol start="1">
+          <li >Сангвиник
+             <ul>
+              <li>Описание типа</li>
+              <li>Отношения с обществом</li>
+            </ul>
+          </li>
+
+          <li>Меланхолик
+            <ul>
+              <li>Описание типа</li>
+              <li>Отношения с обществом</li>
+            </ul>
+          </li>
+
+          <li>Холерик
+            <ul>
+              <li>Описание типа</li>
+              <li>Отношения с обществом</li>
+            </ul>
+          </li>
+          <li>Флегматик
+            <ul>
+              <li>Описание типа</li>
+              <li>Отношения с обществом</li>
+            </ul>
+          </li>
+        </ol>
+</div>
+<div>
+<h2>Таблица</h2>
+<table border="1">
+      <tr>
+              <td> ФИО </td>
+            <td colspan="3" ><a href="SECOND.html" name="link">Трошко Валерия Николаевна</a></td>
+      </tr>
+      <tr>
+            <td>Фото</td>
+            <td> Адрес: ул.Белорусская,д.21 </td>
+      </tr>
+      <tr>
+            <td>1 семестр 2019/2020 уч.года</td>
+            <td>
+                  <table border="1">
+                        <tr>
+                              <td>Дата</td>
+                              <td>Предмет</td>
+                              <td>Оценка</td>
+                        </tr>
+                        <tr>
+                              <td>31.01.2020</td>
+                              <td>ОАиП</td>
+                              <td class="b">4</td>
+                        </tr> 
+                        <tr>
+                              <td>17.01.2020</td>
+                              <td>Физика</td>
+                              <td class="b">6</td>
+                        </tr> 
+                        <tr>
+                              <td>08.01.2020</td>
+                              <td>ОИТ</td>
+                              <td class="b">6</td>
+                        </tr> 
+                        <tr>
+                              <td>22.01.2020</td>
+                              <td>Математика</td>
+                              <td class="b">7</td>
+                        </tr> 
+                        <tr>
+                              <td>03.01.2020</td>
+                              <td>АЛОЦВМ</td>
+                              <td class="b">6</td>
+                            
+                        </tr> 
+                  </table> 
+            </td>
+      </tr> 
+</table> 
+</div>
+</body>
+</html>
